@@ -21,6 +21,7 @@ function showAverageMarks()
    // if(marksActive) return;
 
     var fulltable = getFullTable();
+    if(fulltable === null) return;
 
     if(fulltable == null) return;
     marksActive = true;
@@ -162,6 +163,7 @@ function fillMarks(body)
 function setColor(mark, mySpan)
 {
     const goodMarks = ['A', 'B', 'h', 'p', '-',];
+    var myColor = "Include";
     if(goodMarks.includes(mark) || mark >= 5.0)
     {
         mySpan.style.color = '#6a8ac8';
