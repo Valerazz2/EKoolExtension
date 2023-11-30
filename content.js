@@ -22,7 +22,7 @@ function testFunc()
 }
 function showAverageMarks()
 {
-   // if(marksActive) return;
+    if(marksActive) return;
 
     var fulltable = getFullTable();
 
